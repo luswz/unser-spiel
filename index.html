@@ -2,7 +2,7 @@
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Unser Spiel</title>
-<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Unser Spiel"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#c0392b"><link rel="apple-touch-icon" href="icon.png">
+<meta name="apple-mobile-web-app-title" content="Unser Spiel"><meta name="theme-color" content="#c0392b"><link rel="apple-touch-icon" href="icon.png">
 <style>
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--ink:#1d2a44;--warm:#ffb347;--card:rgba(255,255,255,.92)}
 html,body{height:100%;margin:0;overflow:hidden;background:#cfe0ee;font-family:"Trebuchet MS",system-ui,sans-serif;touch-action:none;user-select:none;-webkit-user-select:none}
@@ -1295,4 +1295,4 @@ function loop(){requestAnimationFrame(loop);const dt=Math.min(clock.getDelta(),.
  {const bh=(room===7&&pSail>=0)?9.5:3.8;place($('b1'),player,bh);place($('b2'),date,bh)}sepBub();
  renderer.render(scene,cam);if(pip7)renderPip7()}
 loop();
-</script></body></html>
+</script><script>try{if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js')}catch(e){}</script></body></html>
